@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import './GoogleAuth.css';
+import './GoogleAuth.css';
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
@@ -57,6 +57,7 @@ class GoogleAuth extends Component {
 
   render() {
     return <div>{this.renderAuthButton()}</div>;
+  return <div>Google Auth</div>;
   }
 }
 
