@@ -1,6 +1,6 @@
     import React, {Fragment} from 'react';
     import { Field, reduxForm } from 'redux-form';
-    import './formStyles.css';
+   import { connect } from 'react-redux';
     import { createStream } from '../../actions';
     import './formStyles.css';
 
@@ -22,7 +22,7 @@
         );
       }
 
-      onSubmitForm(formValues) {
+      onSubmitForm= (formValues) => {
           this.props.createStream(formValues);
       }
 
