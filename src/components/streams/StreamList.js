@@ -20,6 +20,17 @@
             })
         }
 
+         renderAdmin(stream) {
+        if(stream.userId === this.props.currUserId) {
+                return (
+                    <div>
+                    <Link to={`/streams/edit/${stream.id}`} className="editBtn linkBtn">Edit</Link>
+                    <Link to={`/streams/delete/${stream.id}`}  className="deleteBtn linkBtn">Delete</Link>
+                    </div>
+                )
+            }
+        }
+
          render() {
             return (
             <div>
